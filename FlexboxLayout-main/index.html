@@ -12,27 +12,25 @@
                 <img src="Imagens/cimol.png"/>
             </div>
             <div id="indent"><h1>Escola Técnica Estadual Monteiro Lobato</h1></div>
-            <div id="menu"> <img src="Imagens/menu-amburger.png" href="link" /></div>
-            <div id="nav">
-                <nav>
+            <div id="menu"> <img src="Imagens/menu-amburger.png"  /></div>             <nav >
                 <ul>
                     <li>
-                        <a href:"">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href:"">Cursos</a>
+                        <a href="#">Cursos</a>
                     </li>
                     <li>
-                        <a href:"">Sobre</a>
+                        <a href="#">Sobre</a>
                     </li>
                     <li>
-                        <a href:"">Contato</a>
+                        <a href="#">Contato</a>
                     </li>
                 </ul>
                 </nav>
-            </div>
         </header>
         <main>
+            <img id="img-fundo" src="./Imagens/logo2.png" />
             <h1>Curso Técnico em Informática</h1>
             <p id="p">Os sistemaas informatizados estão cada vez mais presentes no cotidiano da sociedade,
                 difundindo-se em todos os setores da sociedade como no comércio, indústria, saúde, 
@@ -44,17 +42,28 @@
                 interpessoais construtivas e compreender o contexto em que está inserido, demonstrando
                 capacidade propositiva e criativa.
             </p>
-            <div id="img" >
-                <div id="docker"><img src="Imagens/docker.png" /> </div>
-                <div id="python"><img src="Imagens/python.jpg" /> </div>
-                <div id="mysql"><img src="Imagens/mysql.png" /> </div>
-                <div id="html5"><img src="Imagens/html5.png" /> </div>
-                <div id="css"><img src="Imagens/css.png" /> </div>
-                <div id="php"><img src="Imagens/php.png" /> </div>
             </div>
+            <div id="img" class="flex-container">
+            <div id="docker"><img src="Imagens/docker.png"  /></div>  
+            <div id="python"><img src="Imagens/python.jpg" /></div>
+            <div id="mysql"><img src="Imagens/mysql.png"  /></div>
+            <div id="html5"><img src="Imagens/html5.png" /></div>
+            <div id="css" ><img src="Imagens/css.png" /></div>
+            <div id="php"><img src="Imagens/php.png" /></div>
         </main>
         <footer>
 
         </footer>
     </body>
+    <script>
+        let nav=document.querySelector("nav");
+        nav.style.display="none";
+        let icon=document.querySelector("#menu");
+        icon.onclick=function(){
+            if(nav.style.display=="none")
+            nav.style.display="block"
+            else
+                nav.style.display="none"
+        }
+    </script>
 </html>
